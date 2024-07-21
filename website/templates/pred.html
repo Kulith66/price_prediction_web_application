@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('templates', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Laptop Price Predictor</div>
+        <div class="spects">Specifications</div>
+        <div class="result">
+            <p>Company name: <span class="highlight">{{ company }}</span></p>
+            <p>Type: <span class="highlight">{{ typeS }}</span></p>
+            <p>OS version: <span class="highlight">{{ os }}</span></p>
+            <p>RAM: <span class="highlight">{{ ram }} GB</span></p>
+            <p>Screen Type: <span class="highlight">{{ screen }}</span></p>
+            <p>CPU: <span class="highlight">{{ cpu }}</span></p>
+            <p>GPU: <span class="highlight">{{ gpu }}</span></p>
+            <p>Weight: <span class="highlight">{{ weight }} KG</span></p>
+        </div>
+    </div>
+</body>
+</html>

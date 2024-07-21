@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Laptop Price Predictor</div>
+        <div>
+            <form action="/" method="POST">
+                <div class="inputField">
+                    <fieldset>
+                        <legend>Company:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="company1" name="company" value="Dell" />
+                            <label for="company1"> Dell</label>
+                            <input type="checkbox" id="company2" name="company" value="Lenovo" />
+                            <label for="company2"> Lenovo</label>
+                            <input type="checkbox" id="company3" name="company" value="HP" />
+                            <label for="company3"> HP</label>
+                            <input type="checkbox" id="company4" name="company" value="Acer" />
+                            <label for="company4"> Acer</label>
+                            <input type="checkbox" id="company5" name="company" value="Asus" />
+                            <label for="company5"> Asus</label>
+                            <input type="checkbox" id="company6" name="company" value="MSI" />
+                            <label for="company6"> MSI</label>
+                            <input type="checkbox" id="company7" name="company" value="Toshiba" />
+                            <label for="company7"> Toshiba</label>
+                            <input type="checkbox" id="company8" name="company" value="Apple" />
+                            <label for="company8"> Apple</label>
+                            <input type="checkbox" id="company9" name="company" value="Other" />
+                            <label for="company9"> Other</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <label for="ram">RAM (GB):</label>
+                    <input type="text" class="input" name="ram" />
+                </div>
+                <div class="inputField">
+                    <label for="weight">Weight (KG):</label>
+                    <input type="text" class="input" name="weight" />
+                </div>
+                <div class="inputField">
+                    <fieldset>
+                        <legend>Type Name:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="type1" name="type" value="Notebook" />
+                            <label for="type1"> Notebook</label>
+                            <input type="checkbox" id="type2" name="type" value="Gaming" />
+                            <label for="type2"> Gaming</label>
+                            <input type="checkbox" id="type3" name="type" value="Ultrabook" />
+                            <label for="type3"> Ultrabook</label>
+                            <input type="checkbox" id="type4" name="type" value="2 in 1 Convertible" />
+                            <label for="type4"> 2 in 1 Convertible</label>
+                            <input type="checkbox" id="type5" name="type" value="Workstation" />
+                            <label for="type5"> Workstation</label>
+                            <input type="checkbox" id="type6" name="type" value="Netbook" />
+                            <label for="type6"> Netbook</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <fieldset>
+                        <legend>Screen Resolution:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="screen1" name="screen" value="TouchScreen" />
+                            <label for="screen1"> Touch Screen</label>
+                            <input type="checkbox" id="screen2" name="screen" value="IPSpanel" />
+                            <label for="screen2"> IPS panel</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <fieldset>
+                        <legend>CPU:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="cpu1" name="cpu" value="IntelCorei7" />
+                            <label for="cpu1"> IntelCorei7</label>
+                            <input type="checkbox" id="cpu2" name="cpu" value="IntelCorei5" />
+                            <label for="cpu2"> IntelCorei5</label>
+                            <input type="checkbox" id="cpu3" name="cpu" value="IntelCorei3" />
+                            <label for="cpu3"> IntelCorei3</label>
+                            <input type="checkbox" id="cpu4" name="cpu" value="AMD" />
+                            <label for="cpu4"> AMD</label>
+                            <input type="checkbox" id="cpu5" name="cpu" value="Other" />
+                            <label for="cpu5"> Other</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <fieldset>
+                        <legend>GPU:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="gpu1" name="gpu" value="Intel HD Graphics 620" />
+                            <label for="gpu1"> Intel HD Graphics 620</label>
+                            <input type="checkbox" id="gpu2" name="gpu" value="Intel HD Graphics 520" />
+                            <label for="gpu2"> Intel HD Graphics 520</label>
+                            <input type="checkbox" id="gpu3" name="gpu" value="Intel UHD Graphics 620" />
+                            <label for="gpu3"> Intel UHD Graphics 620</label>
+                            <input type="checkbox" id="gpu4" name="gpu" value="Nvidia GeForce GTX 1050" />
+                            <label for="gpu4"> Nvidia GeForce GTX 1050</label>
+                            <input type="checkbox" id="gpu5" name="gpu" value="Nvidia GeForce GTX 1060" />
+                            <label for="gpu5"> Nvidia GeForce GTX 1060</label>
+                            <input type="checkbox" id="gpu6" name="gpu" value="IntelOther" />
+                            <label for="gpu6"> Intel Other</label>
+                            <input type="checkbox" id="gpu7" name="gpu" value="AMDOther" />
+                            <label for="gpu7"> AMD Other</label>
+                            <input type="checkbox" id="gpu8" name="gpu" value="Other" />
+                            <label for="gpu8"> Other</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <fieldset>
+                        <legend>Operating System:</legend>
+                        <div class="scrollable-checkboxes">
+                            <input type="checkbox" id="os1" name="os" value="Windows" />
+                            <label for="os1"> Windows</label>
+                            <input type="checkbox" id="os2" name="os" value="Linux" />
+                            <label for="os2"> Linux</label>
+                            <input type="checkbox" id="os3" name="os" value="MacOS" />
+                            <label for="os3"> MacOS</label>
+                            <input type="checkbox" id="os4" name="os" value="Other" />
+                            <label for="os4"> Other</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="inputField">
+                    <input class="btn" type="submit" value="Predict price">
+                </div>
+            </form>
+            <div class="results">
+                {% if Prediction != 0 %}
+                <div class="result">
+                    <p>Company name: <span class="highlight">{{ company }}</span></p>
+                    <p>Type: <span class="highlight">{{ typeS }}</span></p>
+                    <p>OS version: <span class="highlight">{{ os }}</span></p>
+                    <p>RAM: <span class="highlight">{{ ram }} GB</span></p>
+                    <p>Screen Type: <span class="highlight">{{ screen }}</span></p>
+                    <p>CPU: <span class="highlight">{{ cpu }}</span></p>
+                    <p>GPU: <span class="highlight">{{ gpu }}</span></p>
+                    <p>Weight: <span class="highlight">{{ weight }} KG</span></p>
+                    <p>Estimated Price: <span class="highlight">{{ predi }} Rupees</span></p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
